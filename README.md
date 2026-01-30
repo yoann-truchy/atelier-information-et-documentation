@@ -26,9 +26,6 @@ pip install -r requirements.txt
 ```
 
 # Explication des données
-Affin de se familiariser avec les données du dataset, des datacards sont fournies. Pour les visualiser, executez la commande suivantes :
-``` sh
-python ./visualiez-datacards.py
-```
+Affin de se familiariser avec les données du dataset, des datacards sont fournies 
 
 # Explication du modèle
