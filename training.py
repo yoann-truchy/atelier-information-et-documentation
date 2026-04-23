@@ -56,7 +56,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # ======================
-# 5) Modèles (choisis-en un)
+# 5) Modèles 
 # ======================
 
 # A) Baseline solide (linéaire) + pondération auto pour classes déséquilibrées
@@ -75,7 +75,7 @@ hgb = HistGradientBoostingClassifier(
 )
 
 # choix du modele manuel
-MODEL = logreg   # ou: hgb
+MODEL =  logreg  # ou: hgb
 
 pipe = Pipeline(steps=[
     ("preprocess", preprocess),
@@ -112,3 +112,4 @@ if hasattr(pipe.named_steps["model"], "predict_proba"):
 OUT_PATH = "depression_classifier.joblib"
 joblib.dump(pipe, OUT_PATH)
 print(f"\nModèle sauvegardé: {OUT_PATH}")
+
